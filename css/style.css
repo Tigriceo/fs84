@@ -1,3 +1,95 @@
-body{
-    font-family: 'Inter', sans-serif;
+:root {
+  --colorWhite: #fff;
+
+  --bg-dark: #06071b;
 }
+body {
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  font-family: inherit;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 26px;
+  width: 100%;
+  background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+  backdrop-filter: blur(17.5px);
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0 18px;
+}
+.header__block a {
+  color: var(--colorWhite);
+  text-decoration: none;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav-list a {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.logo {
+  font-size: 28px;
+  line-height: 1.2442;
+}
+
+/* section hero */
+.hero {
+  background: var(--bg-dark);
+  color: var(--colorWhite);
+  min-height: 80vh;
+  padding-top: 96px;
+}
+
+/* наступний */
+/* .test-li + li {
+  color: red;
+} */
+/* всі наступні елементи */
+/* .test-li ~ li {
+  color: red;
+} */
+/* перший дочірній елемент */
+/* .test-list > li > a {
+  color: red;
+} */
+/* всі елементи */
+/* .test-list * {
+  color: blue;
+} */
+/* .portfolio-item {
+  background-color: blue;
+}
+.portfolio-item:focus{
+    border: 5px solid red;
+} */
