@@ -1,5 +1,6 @@
 :root {
   --colorWhite: #fff;
+  --colorBlack: #000;
 
   --bg-dark: #06071b;
 }
@@ -28,15 +29,34 @@ ul {
   margin-right: auto;
 }
 .btn {
+  display: block;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: var(--colorWhite);
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 9px 60px 10px;
 }
+
+.section-title {
+  font-size: 24px;
+  line-height: 1.2083;
+  color: var(--colorBlack, #000);
+}
+
+/* header */
 .header {
   position: fixed;
+  z-index: 5;
   left: 0;
   top: 26px;
   width: 100%;
   background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
   backdrop-filter: blur(17.5px);
+  /* min-height: var(--headerHeight, 72px); */
 }
 .header__block {
   display: flex;
@@ -65,10 +85,40 @@ ul {
 
 /* section hero */
 .hero {
-  background: var(--bg-dark);
+  position: relative;
+  padding: 241px 0 146px;
+  font-weight: 700;
   color: var(--colorWhite);
-  min-height: 80vh;
-  padding-top: 96px;
+  background: var(--bg-dark);
+}
+.hero__inner {
+  max-width: 442px;
+}
+.hero__title {
+  margin-bottom: 12px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.hero__subtitle {
+  margin-bottom: 28px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.hero__list-item {
+  /* font-size: 16px; */
+  line-height: 1.1875;
+}
+.hero__list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.hero__btn {
+  margin-top: 60px;
+}
+.hero__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
 }
 
 /* наступний */
